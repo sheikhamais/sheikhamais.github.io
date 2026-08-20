@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amais: Money Manager - Privacy Policy</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.65;
+            margin: 0;
+            padding: 20px;
+            background: #f5f7fa;
+            color: #2d3436;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2ecc71;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 14px;
+            margin-top: 0;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+        }
+
+        .meta {
+            color: #7f8c8d;
+            font-size: 0.95em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #27ae60;
+            margin-top: 2em;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            color: #219150;
+            margin-top: 1.6em;
+        }
+
+        p, li {
+            font-size: 1em;
+        }
+
+        a {
+            color: #1e88e5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ecf0f1;
+            margin: 2.2em 0;
+        }
+
+        .summary-box {
+            background: #f8f9fa;
+            padding: 20px 24px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #ecf0f1;
+        }
+
+        .summary-box h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+
+        blockquote {
+            margin: 1em 0;
+            padding: 12px 20px;
+            border-left: 3px solid #2ecc71;
+            background: #f8f9fa;
+            border-radius: 0 6px 6px 0;
+        }
+
+        blockquote p {
+            margin: 0.3em 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.4em 0;
+            font-size: 0.95em;
+        }
+
+        th, td {
+            border: 1px solid #e0e4e8;
+            padding: 10px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #f0f3f5;
+            color: #2d3436;
+        }
+
+        tr:nth-child(even) td {
+            background: #fafbfc;
+        }
+
+        .table-scroll {
+            overflow-x: auto;
+        }
+
+        code {
+            background: #f0f3f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .callout {
+            background: #fff8e1;
+            border: 1px solid #ffe082;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 1.4em 0;
+        }
+
+        footer {
+            margin-top: 2.5em;
+            padding-top: 1.2em;
+            border-top: 1px solid #ecf0f1;
+            color: #95a5a6;
+            font-size: 0.85em;
+            font-style: italic;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 8px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Privacy Policy<br><span class="subtitle">Amais: Money Manager</span></h1>
+        <div class="meta">
+            <strong>Effective date:</strong> 20 August 2026<br>
+            <strong>Last updated:</strong> 20 August 2026<br>
+            <strong>Version:</strong> 1.0<br>
+            <strong>Published at:</strong> <a href="https://sheikhamais.github.io/moneymanager/privacy/">https://sheikhamais.github.io/moneymanager/privacy/</a>
+        </div>
+
+        <hr>
+
+        <h2>The short version</h2>
+        <p>Amais: Money Manager is a personal finance tracker built around a simple idea: your financial records live on your device, and anything that leaves it is either something you explicitly asked for or the minimum needed to run the optional services described below.</p>
+        <ul>
+        <li><strong>Your accounts and transactions are stored locally on your device.</strong> We do not operate a server that stores your financial records in plain, readable form. There is no manual export/backup file feature in this version of the App.</li>
+        <li><strong>Signing in is optional.</strong> You can use every core feature of the App — creating accounts, logging transactions, viewing your history — without ever signing in. If you choose to sign in with Google or Apple, we (via Firebase Authentication) receive your name, email address, profile photo, and a unique identifier for your account. Signing in does not copy your local financial data anywhere.</li>
+        <li><strong>A $5/year premium subscription</strong> removes ads and unlocks encrypted cloud backup. Purchases are handled by <strong>Apple</strong>, and we use <strong>RevenueCat</strong> to track your subscription status — we never see your card details.</li>
+        <li><strong>Premium cloud sync is end-to-end encrypted with a password only you know.</strong> If you turn it on, your accounts and transactions are backed up to Google's Firestore database — but only as scrambled ciphertext. We, Google, and anyone else who might access our systems cannot read it. <strong>If you forget your encryption password and lose access to the device that has it, that backup cannot be recovered by anyone, including us.</strong> See Section 8.</li>
+        <li><strong>Free users may see a rewarded video ad</strong> (via Google's AdMob) at two points in the App — saving a new account and saving a new transaction — currently on iOS only. On iOS, we ask for your permission (Apple's App Tracking Transparency prompt) before any advertising identifier is used. See Section 9 for what this means, including a region we haven't fully built consent tooling for yet.</li>
+        <li><strong>Signing out gives you a choice</strong>: keep your local data on the device, or delete it. Read that choice carefully before you tap anything — see Section 6.3, because deleting is immediate and cannot be undone by us.</li>
+        <li>We do not sell your data, and we do not run analytics or crash-reporting software of our own in the App.</li>
+        </ul>
+        <p>This summary is provided for convenience only. It is not a substitute for the full policy below, which governs.</p>
+
+        <hr>
+
+        <h2>1. About this policy and who is responsible</h2>
+        <p>This Privacy Policy explains how personal data is handled in connection with the mobile application <strong>Amais: Money Manager</strong> (the <strong>"App"</strong>), including any updates, and the related web pages we publish at <a href="https://sheikhamais.github.io/moneymanager/">https://sheikhamais.github.io/moneymanager/</a> (together, the <strong>"Service"</strong>).</p>
+        <p>The party responsible for the App — the <strong>"data controller"</strong> for the purposes of the EU General Data Protection Regulation (Regulation (EU) 2016/679, <strong>"GDPR"</strong>) and the UK GDPR, and the <strong>"business"</strong> for the purposes of the California Consumer Privacy Act as amended by the California Privacy Rights Act (<strong>"CCPA/CPRA"</strong>) — is:</p>
+        <blockquote>
+        <p><strong>Amais Sheikh</strong>, an individual developer<br />
+        <strong>Pakistan</strong><br />
+        Email: <strong>sheikhamais@gmail.com</strong></p>
+        </blockquote>
+        <p>References to <strong>"we"</strong>, <strong>"us"</strong> and <strong>"our"</strong> mean that party. References to <strong>"you"</strong> and <strong>"your"</strong> mean the person using the App.</p>
+        <p><strong>Contacting us about privacy.</strong> For any question, request, or complaint about privacy or personal data, including to exercise any of the rights described in Section 14, write to <strong>sheikhamais@gmail.com</strong>. This is our designated contact address for all privacy matters worldwide, and it is monitored.</p>
+        <p>We have not appointed a Data Protection Officer, because our processing does not meet the thresholds in Article 37 GDPR. Privacy enquiries go to the address above.</p>
+
+        <hr>
+
+        <h2>2. Scope of this policy</h2>
+        <p>This policy applies to the App and to the legal pages we publish for it at <a href="https://sheikhamais.github.io/moneymanager/">https://sheikhamais.github.io/moneymanager/</a>.</p>
+        <p>This policy does <strong>not</strong> apply to:</p>
+        <ul>
+        <li><strong>Apple's</strong> collection and use of information when you download the App, sign in with your Apple Account, use <strong>Sign in with Apple</strong>, or make a purchase through the App Store. Apple acts as an independent controller for that information under its own privacy policy, available at <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a>.</li>
+        <li><strong>Google's</strong> collection and use of information when you use <strong>Sign in with Google</strong>, or through the <strong>Google Mobile Ads (AdMob)</strong> SDK described in Section 9. For Google Sign-In and for advertising, Google acts as an independent controller under its own privacy policy, available at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>, and its Ad Partner Programme policy at <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">https://support.google.com/admob/answer/6128543</a>. (This is distinct from Google <strong>Firebase</strong>, which we use as our own processor — see Section 3.)</li>
+        <li><strong>RevenueCat, Inc.'s</strong> processing of purchase and device information used to manage and verify your subscription, as described in Section 7. RevenueCat processes this information on our behalf as a processor, under its own privacy policy, available at <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">https://www.revenuecat.com/privacy/</a>.</li>
+        <li><strong>GitHub, Inc.</strong>, which hosts the web pages on which this policy and our Terms are published, through GitHub Pages. When you open one of those pages, GitHub may process technical information such as your IP address and browser user-agent in order to serve the page and to protect its service, under its own privacy statement, available at <a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">https://docs.github.com/site-policy/privacy-policies/github-privacy-statement</a>. <strong>We have added no tracking, cookies, or scripts of our own to these pages.</strong></li>
+        <li>Any other third-party website you reach by tapping a link. The App may open links in your device's default browser; anything you do on the destination page is governed by that site's own policies.</li>
+        <li>Your device operating system, network provider, or any other software on your device.</li>
+        </ul>
+
+        <hr>
+
+        <h2>3. The services we use, and what role each one plays</h2>
+        <p>Because several external services are involved, here is a plain map of who does what and in what capacity, before the detailed sections below:</p>
+        <div class="table-scroll">
+        <table>
+        <thead>
+        <tr>
+        <th>Service</th>
+        <th>What it's used for</th>
+        <th>Its role</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><strong>Firebase Authentication</strong> (Google)</td>
+        <td>Optional Google/Apple sign-in — Section 6</td>
+        <td>Our <strong>processor</strong>: acts on our instructions to run the identity system we chose to use</td>
+        </tr>
+        <tr>
+        <td><strong>Cloud Firestore</strong> (Google/Firebase)</td>
+        <td>Premium encrypted cloud sync — Section 8</td>
+        <td>Our <strong>processor</strong>: stores only the encrypted, opaque data our App sends it</td>
+        </tr>
+        <tr>
+        <td><strong>RevenueCat</strong></td>
+        <td>Subscription/entitlement management — Section 7</td>
+        <td>Our <strong>processor</strong>: verifies and tracks what you've purchased on our behalf</td>
+        </tr>
+        <tr>
+        <td><strong>Apple (App Store, StoreKit, Sign in with Apple)</strong></td>
+        <td>Distribution, payment, Apple sign-in — Sections 2, 6, 7</td>
+        <td><strong>Independent controller</strong>: Apple decides how it uses this data under its own policy</td>
+        </tr>
+        <tr>
+        <td><strong>Google (Sign-In, AdMob)</strong></td>
+        <td>Google sign-in identity, advertising — Sections 2, 6, 9</td>
+        <td><strong>Independent controller</strong>: Google decides how it uses this data under its own policy</td>
+        </tr>
+        <tr>
+        <td><strong>GitHub Pages</strong></td>
+        <td>Hosts this policy and our Terms</td>
+        <td><strong>Independent controller</strong>: for the technical logs of visiting these web pages only</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+
+        <hr>
+
+        <h2>4. Age of users and children's privacy</h2>
+        <p>Amais: Money Manager is a general-purpose personal finance utility. It contains no chat, no messaging, no social features, no user-generated content shared with others, and no way for one user to contact another. You must be at least 13 years old to use the App — see Section 3 of the Terms and Conditions.</p>
+        <ul>
+        <li><strong>United States — COPPA.</strong> We do not knowingly collect personal information from children under 13, and account sign-in and subscription purchases require an App Store or Google account, which itself requires meeting the platform's own minimum age.</li>
+        <li><strong>EEA — GDPR Article 8.</strong> Where processing of a child's personal data would be based on consent, GDPR Article 8 requires parental consent below an age set by each Member State (between 13 and 16). We do not knowingly process personal data from a user we believe to be below that age.</li>
+        <li><strong>United Kingdom.</strong> We have had regard to the Information Commissioner's Office <em>Age Appropriate Design Code</em>. The App does not use behavioural profiling for advertising, and rewarded ads (Section 9) are shown identically to all non-premium users regardless of any demographic signal — we do not target ads by age.</li>
+        </ul>
+        <p><strong>Parents and guardians.</strong> If you believe a child has provided personal data to us, contact <strong>sheikhamais@gmail.com</strong> and we will investigate and delete anything found. Parents should also be aware that a subscription purchase is charged to the Apple Account signed in on the device; Apple provides <em>Ask to Buy</em> and <em>Screen Time</em> controls to manage this.</p>
+
+        <hr>
+
+        <h2>5. What we do not collect</h2>
+        <p>The App does <strong>not</strong>:</p>
+        <ul>
+        <li>access your contacts, photos, camera, microphone, calendar, health data, or Bluetooth;</li>
+        <li>collect or derive your precise or approximate <strong>geolocation</strong>;</li>
+        <li>run any analytics, crash-reporting, or usage-measurement SDK of our own (we have not integrated Firebase Analytics, Crashlytics, or any comparable tool);</li>
+        <li>connect to, authenticate with, or retrieve data from any bank, card issuer, payment network, or financial institution — every account and transaction you log is entered by you, manually;</li>
+        <li>store your accounts or transactions on our own server in a form we, or anyone else, can read — see Sections 6 and 8;</li>
+        <li>collect your <strong>advertising identifier</strong> for anything other than the ad-serving purpose described in Section 9, and only after the permission described there;</li>
+        <li>build a behavioural profile about you, or make any automated decision that produces legal or similarly significant effects concerning you;</li>
+        <li><strong>sell</strong> or <strong>share</strong> personal information, as those terms are defined under US state privacy laws, for cross-context behavioural advertising.</li>
+        </ul>
+
+        <hr>
+
+        <h2>6. Local data, and the optional account you can sign in with</h2>
+        <h3>6.1 Your financial records — always local</h3>
+        <p>Every account and transaction you create — title, balance, amounts payable/receivable, investment values, transaction details, tags, dates — is stored in a <strong>SQLite database</strong> inside the App's private, sandboxed storage on your device. This is true whether or not you sign in, and whether or not you subscribe. <strong>Signing in does not upload this data anywhere by itself</strong> — only the separate, opt-in cloud sync feature in Section 8 does that, and only if you turn it on.</p>
+        <p><strong>Free-text fields.</strong> The description you type on a transaction, and the title you give an account, are free text. Be mindful of what you type there — see Section 8.1 for how that text is handled if you enable cloud sync.</p>
+        <h3>6.2 Optional sign-in — Google or Apple, via Firebase Authentication</h3>
+        <p>You can sign in with your Google account, or (on iOS) with <strong>Sign in with Apple</strong>. Signing in is entirely optional and <strong>does not gate any part of the App</strong> — every screen works fully whether you're signed in or not.</p>
+        <p>When you sign in, we receive, via Firebase Authentication:</p>
+        <div class="table-scroll">
+        <table>
+        <thead>
+        <tr>
+        <th>Data</th>
+        <th>Source</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>A unique account identifier (Firebase UID)</td>
+        <td>Generated by Firebase when your account is first created</td>
+        </tr>
+        <tr>
+        <td>Display name</td>
+        <td>From your Google or Apple account, if shared</td>
+        </tr>
+        <tr>
+        <td>Email address</td>
+        <td>From your Google or Apple account, if shared (Apple lets you use a private relay address instead of your real one — that relay address is what we then see)</td>
+        </tr>
+        <tr>
+        <td>Profile photo URL</td>
+        <td>From your Google account, if available (Apple does not provide one)</td>
+        </tr>
+        <tr>
+        <td>Which provider you used</td>
+        <td>Google or Apple</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        <p>This identity information is used only to: (a) show your name in the App, (b) let your $5/year subscription (Section 7) and, if you're premium, your encrypted cloud backup (Section 8) follow you across devices, and (c) let you sign out and back in. <strong>We do not use it for marketing, and we do not share it with anyone except the processors described in Section 3 that are necessarily involved in running these features.</strong></p>
+        <p>You can sign out at any time from the account menu on the Home screen.</p>
+        <h3>6.3 Signing out — read this before you tap "Delete Data"</h3>
+        <p>Because the App's local database is not automatically split per signed-in user (it's one shared store on the device), when you sign out we ask you a real question, not a formality:</p>
+        <blockquote>
+        <p><em>"Do you want to delete the accounts and transactions stored on this device, or keep them for the next person who signs in?"</em></p>
+        </blockquote>
+        <ul>
+        <li><strong>Keep Data</strong> — your local accounts and transactions stay on the device exactly as they are, visible to whoever uses the App on it next (signed in or not).</li>
+        <li><strong>Delete Data</strong> — <strong>every account and transaction currently stored on this device is permanently erased</strong>, immediately, before you're signed out. This cannot be undone by us — we hold no copy.</li>
+        </ul>
+        <p><strong>This choice only affects the local copy on this device.</strong> If you had premium cloud sync (Section 8) turned on, your encrypted backup in the cloud is <strong>not</strong> touched by this local deletion either way — it stays exactly as it was until you separately manage or delete it.</p>
+
+        <hr>
+
+        <h2>7. Subscriptions and purchases</h2>
+        <p>The App offers one subscription: <strong>$5.00 USD per year</strong> (or the equivalent shown by the App Store in your local currency), unlocking an ad-free experience and encrypted cloud sync (Section 8). It's currently purchasable through the <strong>Apple App Store only</strong>; Android/Google Play purchasing is not yet available.</p>
+        <ul>
+        <li><strong>Apple is the merchant of record.</strong> You enter your payment details with Apple, not with us. We never see, receive, or store your card number, billing address, or Apple Account credentials. Apple tells us only whether a purchase succeeded and which product it was for.</li>
+        <li><strong>RevenueCat</strong>, a subscription-management platform, verifies and tracks your entitlement on our behalf, as our processor. To do this it:<ul>
+        <li>links your purchase to your <strong>Firebase UID</strong> (Section 6.2) if you're signed in, so your subscription can follow you to a reinstall or another device;</li>
+        <li>receives your <strong>purchase and transaction data</strong> from Apple (product identifier, purchase/renewal/expiration dates, transaction identifiers);</li>
+        <li>does not receive your payment card details, and does not use this data for its own advertising purposes.</li>
+        </ul>
+        </li>
+        <li>We may receive <strong>aggregated, non-identifying</strong> sales reports from Apple through App Store Connect (for example, units sold in a country in a period). These do not identify individual purchasers.</li>
+        <li>Restoring purchases (available from the paywall screen) asks Apple which of our products your signed-in Apple Account has already bought, and re-enables them — it transmits no new personal data to us.</li>
+        </ul>
+
+        <hr>
+
+        <h2>8. Premium cloud sync — end-to-end encrypted</h2>
+        <p>If you're a signed-in, premium subscriber, you can turn on an <strong>optional</strong> backup of your accounts and transactions to Google's <strong>Cloud Firestore</strong> database (part of the same Firebase platform used for sign-in). This is off by default and only reachable behind the premium paywall.</p>
+        <h3>8.1 How the encryption works, and why we can't read your data</h3>
+        <p>The first time you turn sync on, the App asks you to create a <strong>separate encryption password</strong> — not your sign-in password, and something we never see or store:</p>
+        <ul>
+        <li>Your password is run through a key-derivation function (Argon2id) <strong>on your device</strong> to produce an encryption key. The password itself is never transmitted anywhere.</li>
+        <li>Every account and transaction is encrypted <strong>on your device</strong> (AES-256-GCM) before it is sent to Firestore. What actually reaches Google's servers is unreadable ciphertext.</li>
+        <li>Alongside the ciphertext, Firestore also stores a small amount of <strong>non-secret metadata</strong> needed to re-derive the same key on another device (a random salt and the key-derivation parameters — not the password), and a <strong>plaintext last-modified timestamp</strong> for each record, used only to decide which copy is newer if the same record was edited on two devices.</li>
+        <li><strong>Nobody but you holds the password</strong> — not us, not Google/Firebase, not RevenueCat. We have no technical means to decrypt your data, recover a forgotten password, or read your financial records from the server.</li>
+        </ul>
+        <div class="callout">
+        <p><strong>If you forget this password and lose access to every device that has it saved, your encrypted cloud backup cannot be recovered — by us, by Google, or by anyone.</strong> This is a direct consequence of how the encryption is designed: there is no "reset password" option that works, because resetting it would require someone other than you to be able to derive your key, which would defeat the point of end-to-end encryption. If you find yourself in this situation, the only option the App offers is to permanently delete the old encrypted backup and start a fresh one — see the next paragraph.</p>
+        </div>
+        <p>If you can't remember your password, the App offers an <strong>"I don't have this password"</strong> option, which <strong>permanently deletes your entire existing encrypted backup</strong> from our systems and lets you set up a new password with a clean slate. This does not touch your local data on the device you're using at the time.</p>
+        <h3>8.2 What we (and Google, as our processor) can see</h3>
+        <p>Firestore, and anyone with server-side access to it, can see: your Firebase UID (which record belongs to which account), the ciphertext blobs themselves (unreadable without your password), the non-secret encryption metadata described above, and the plaintext timestamp of when each record was last changed. <strong>At no point does plaintext of your account names, balances, transaction amounts, or transaction descriptions reach our servers or Google's.</strong></p>
+        <p>Access to your own namespace in Firestore is restricted to your signed-in Firebase account only (enforced server-side).</p>
+        <h3>8.3 Turning sync off</h3>
+        <p>Turning the sync toggle off in Settings stops any further pushing/pulling — it does <strong>not</strong> delete your existing encrypted backup. To permanently delete it, use the "I don't have this password" flow described above, or contact us at <strong>sheikhamais@gmail.com</strong> and we will delete your entire Firestore namespace (the ciphertext, since we cannot read it, but we can still delete it) on request.</p>
+
+        <hr>
+
+        <h2>9. Advertising</h2>
+        <p>Non-premium (free) users may see a <strong>rewarded video ad</strong>, via <strong>Google's AdMob</strong> (Google Mobile Ads SDK), at exactly two points: saving a new account, and saving a new transaction. <strong>Premium subscribers never see ads.</strong> This is currently <strong>iOS only</strong> — Android does not yet show ads.</p>
+        <ul>
+        <li>Watching the ad to completion is not required — your save always goes through regardless of whether you watch, skip, or the ad fails to load.</li>
+        <li><strong>Google</strong> is an independent controller for the data its SDK collects when requesting, serving, and measuring the advertisement — typically device model, operating system version, general (non-precise) location derived from IP address, and interaction with the ad, for serving, capping, measuring, and fraud-detection purposes. Google's own privacy policy is at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</li>
+        <li><strong>On iOS, before any ad is requested, the App asks for your permission</strong> through Apple's <strong>App Tracking Transparency</strong> framework — the system prompt described as: <em>"This identifier will be used to deliver ads that are more relevant to you."</em> If you decline, the App does not use your advertising identifier (IDFA) for ad personalisation, and Google's SDK falls back to non-identifier-based ad serving. If you approve, your advertising identifier may be used by Google to personalise the ads you're shown. You can review or change this at any time in <strong>Settings → Privacy &amp; Security → Tracking</strong> on your device.</li>
+        <li><strong>Android does not yet show ads</strong>, so no equivalent Android permission is currently requested.</li>
+        </ul>
+        <div class="callout">
+        <p><strong>A note on the EEA, the UK, and Switzerland.</strong> We have not yet integrated a dedicated regional consent tool (such as Google's User Messaging Platform) for these regions, beyond the App Tracking Transparency prompt on iOS described above. Google's own advertising policies independently require a valid consent signal before serving personalised ads to users in these regions, and its systems may serve only limited or no ads there until such a tool is added. We intend to add a proper consent flow for these regions before actively promoting the App there; if you are in the EEA, the UK, or Switzerland and have questions about what, if anything, was shown to you, contact <strong>sheikhamais@gmail.com</strong>.</p>
+        </div>
+        <ul>
+        <li><strong>We do not use your advertising identifier for any purpose of our own</strong> — the App itself never reads or stores it; it is used only by Google's SDK as described above.</li>
+        <li>If we introduce <strong>personalised</strong> or <strong>behaviourally targeted</strong> advertising beyond AdMob's current standard behaviour, or add Android advertising, this policy will be updated, its version and date revised, and material changes notified in accordance with Section 17.</li>
+        </ul>
+
+        <hr>
+
+        <h2>10. Purposes and legal bases for processing (EEA, UK, Switzerland)</h2>
+        <div class="table-scroll">
+        <table>
+        <thead>
+        <tr>
+        <th>Processing activity</th>
+        <th>Personal data involved</th>
+        <th>Purpose</th>
+        <th>Legal basis</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Local storage and use of the App (accounts, transactions, settings)</td>
+        <td>None received by us; stays on your device unless you enable sync (below)</td>
+        <td>To provide the App you asked for</td>
+        <td><strong>Article 6(1)(b)</strong> — performance of a contract with you</td>
+        </tr>
+        <tr>
+        <td>Optional sign-in (Section 6.2)</td>
+        <td>Name, email, photo URL, provider, Firebase UID</td>
+        <td>To identify you across devices for subscription/sync</td>
+        <td><strong>Article 6(1)(b)</strong> — performance of a contract, entered into by your choice to sign in</td>
+        </tr>
+        <tr>
+        <td>Subscription and entitlement management (Section 7)</td>
+        <td>Firebase UID, purchase/transaction data from Apple</td>
+        <td>To deliver the premium features you paid for</td>
+        <td><strong>Article 6(1)(b)</strong>; <strong>Article 6(1)(c)</strong> for related tax/accounting obligations</td>
+        </tr>
+        <tr>
+        <td>Premium cloud sync (Section 8)</td>
+        <td>Encrypted ciphertext, non-secret KDF metadata, last-modified timestamps, Firebase UID</td>
+        <td>To provide the opt-in backup feature you turned on</td>
+        <td><strong>Article 6(1)(a)</strong> — your explicit consent, given when you turn the feature on and set a password; <strong>Article 6(1)(b)</strong> for premium subscribers, as part of that contract</td>
+        </tr>
+        <tr>
+        <td>Rewarded advertising (Section 9)</td>
+        <td>Device/usage information processed by Google; advertising identifier only if you grant ATT permission on iOS</td>
+        <td>To show the optional ad and let Google measure/cap it</td>
+        <td><strong>Article 6(1)(a)</strong> — your consent via the App Tracking Transparency prompt (iOS), together with consent under national ePrivacy rules for accessing information on your device</td>
+        </tr>
+        <tr>
+        <td>Responding to correspondence you send us</td>
+        <td>Your email address and message content</td>
+        <td>To answer you and keep a record</td>
+        <td><strong>Article 6(1)(b)</strong>, <strong>Article 6(1)(c)</strong> for statutory requests, and <strong>Article 6(1)(f)</strong> — legitimate interest in handling correspondence</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        <p>We do <strong>not</strong> process any <strong>special category</strong> data under Article 9 GDPR, and we do not process criminal-offence data under Article 10. Where we rely on legitimate interests, you have the right to object under Article 21 GDPR — see Section 14.</p>
+
+        <hr>
+
+        <h2>11. When you contact us</h2>
+        <p>If you email <strong>sheikhamais@gmail.com</strong>, we hold your email address and message content for as long as needed to deal with it, and normally <strong>24 months</strong> afterwards for record-keeping, or longer where a legal claim, dispute, or statutory obligation requires it. We do not add you to a mailing list or use your address for marketing.</p>
+
+        <hr>
+
+        <h2>12. Disclosure of information</h2>
+        <p>We do not sell personal information and do not disclose it for money or other valuable consideration. We may disclose information in these circumstances:</p>
+        <ul>
+        <li><strong>Our processors</strong> — Firebase/Google Cloud (identity, encrypted cloud storage), RevenueCat (subscription management), and our email provider — each acting on our documented instructions under a written contract, and not permitted to use your data for their own purposes.</li>
+        <li><strong>Apple and Google, as independent controllers</strong> — for App Store distribution, Sign in with Apple/Google, and AdMob advertising, as described in Sections 2, 6, 7, and 9.</li>
+        <li><strong>GitHub</strong> — for hosting the pages on which these documents are published (Section 2).</li>
+        <li><strong>Legal requirement</strong> — where required by law, a court, or a regulator acting within its powers; we will resist requests we believe unlawful or overbroad, and notify you where legally permitted.</li>
+        <li><strong>Legal claims</strong>, and <strong>vital interests</strong> (to protect someone's life or physical safety).</li>
+        <li><strong>Business transfer</strong> — if the App or our business is sold or transferred, information may transfer with it, subject to the acquirer remaining bound by this policy and notice to you of any material change beforehand.</li>
+        </ul>
+        <p>We do not disclose information to data brokers, and we do not share personal information for cross-context behavioural advertising.</p>
+
+        <hr>
+
+        <h2>13. International transfers</h2>
+        <p>Using the sign-in, subscription, cloud sync, or advertising features described above means data is processed on servers operated by Firebase/Google Cloud, RevenueCat, Apple, and Google, which may be located outside your country, including in the United States. Where personal data is transferred out of the EEA, the UK, or Switzerland to a country without an adequacy decision, we rely on the safeguard each processor itself provides — typically the <strong>European Commission's Standard Contractual Clauses</strong> and/or the recipient's certification under the <strong>EU-US Data Privacy Framework</strong> and its UK/Swiss extensions — as documented in each processor's own privacy policy linked in Section 2. Firestore's ciphertext-only design (Section 8) means that even where your encrypted backup is processed abroad, no plaintext financial data is what's actually transferred. You may request details of the relevant safeguard by writing to <strong>sheikhamais@gmail.com</strong>.</p>
+
+        <hr>
+
+        <h2>14. Your privacy rights</h2>
+        <p>The rights available to you depend on where you live. We honour the rights below for everyone, wherever you are, so far as it is technically possible.</p>
+        <h3>14.1 What we can actually do for you</h3>
+        <p>Unlike a purely local app, we <strong>do</strong> hold some data about you if you've signed in, subscribed, or turned on cloud sync: your identity fields (Section 6.2), your subscription status (via RevenueCat), and — if sync is on — an encrypted (unreadable to us) backup plus its metadata (Section 8). We can delete all of the above on request. We <strong>cannot</strong> read, recover, or hand back the plaintext contents of an encrypted cloud backup, because we never had it — only you, via your password, can decrypt it.</p>
+        <p>Your <strong>local</strong> accounts and transactions (Section 6.1) remain entirely under your control on your device — visible and editable in the App, and erasable via the sign-out "Delete Data" option (Section 6.3) or by deleting the App.</p>
+        <h3>14.2 If you are in the EEA, the United Kingdom, or Switzerland</h3>
+        <p>Under the GDPR and UK GDPR you have the right to:</p>
+        <ul>
+        <li><strong>Access</strong> (Article 15), <strong>Rectification</strong> (Article 16), <strong>Erasure</strong> (Article 17), <strong>Restriction</strong> (Article 18), <strong>Data portability</strong> (Article 20), <strong>Object</strong> (Article 21), <strong>Withdraw consent</strong> (Article 7(3)) at any time without affecting prior lawfulness, and to <strong>not be subject to automated decision-making</strong> (Article 22) — we carry out none.</li>
+        <li><strong>Lodge a complaint</strong> (Article 77) with a supervisory authority — the European Data Protection Board maintains a list at <a href="https://edpb.europa.eu/about-edpb/board/members_en" target="_blank" rel="noopener">https://edpb.europa.eu/about-edpb/board/members_en</a>; in the UK, the Information Commissioner's Office, <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener">https://ico.org.uk/make-a-complaint/</a>; in Switzerland, the Federal Data Protection and Information Commissioner, <a href="https://www.edoeb.admin.ch/" target="_blank" rel="noopener">https://www.edoeb.admin.ch/</a>. We'd ask you to raise the matter with us first, but you're not required to.</li>
+        </ul>
+        <p><strong>Representative.</strong> We have not designated an Article 27 representative in the EEA or UK, relying on the Article 27(2) exemption: our processing is occasional, does not include large-scale special category data, and is unlikely to result in a risk to individuals' rights.</p>
+        <h3>14.3 If you are in the United States</h3>
+        <p>Depending on your state, you may have rights under the <strong>CCPA/CPRA</strong> and comparable laws in Virginia, Colorado, Connecticut, Utah, Texas, Oregon, Montana, and other states, typically including the right to <strong>know/access</strong>, <strong>delete</strong>, <strong>correct</strong>, <strong>opt out of sale/sharing and targeted advertising</strong> (we do not sell or share personal information, so there's currently nothing to opt out of in that specific sense — see Section 9 for how our AdMob integration is treated), <strong>opt out of profiling</strong>, <strong>limit use of sensitive personal information</strong> (we collect none), <strong>non-discrimination</strong>, and, in states that provide one, an <strong>appeal</strong> right — email <strong>sheikhamais@gmail.com</strong> with "Appeal" in the subject.</p>
+        <p><strong>CCPA/CPRA statutory disclosures (preceding 12 months):</strong> categories collected — identifiers (email, name, Firebase UID), commercial information (purchase/subscription status), and internet/network activity via the AdMob SDK on iOS; sold — no; shared for cross-context behavioural advertising — no; disclosed for a business purpose — to the processors named in Section 12; sensitive personal information collected — no; retention — see Section 15.</p>
+        <p><strong>Verification.</strong> We generally verify a request by corresponding with you at the email address it was sent from, or, for identity-linked data, by confirming you control the signed-in account in question.</p>
+        <h3>14.4 If you are elsewhere</h3>
+        <p>We will honour valid requests under Canada's PIPEDA/Law 25, Brazil's LGPD, Australia's Privacy Act 1988, and other applicable data protection laws (Japan, South Korea, India, South Africa, and elsewhere) to the extent they apply to us. Write to us and we will do our best under whichever law applies to you.</p>
+        <h3>14.5 How to make a request</h3>
+        <p>Email <strong>sheikhamais@gmail.com</strong> with the right you want to exercise, your country (and state/province if relevant), and enough detail to identify your account or correspondence. Requests are free. We respond within <strong>one month</strong> (GDPR/UK GDPR, extendable by two further months for complex requests), <strong>45 days</strong> (most US state laws, extendable once by 45 more days), or the period your local law requires, whichever is shorter.</p>
+
+        <hr>
+
+        <h2>15. Data retention</h2>
+        <div class="table-scroll">
+        <table>
+        <thead>
+        <tr>
+        <th>Data</th>
+        <th>Where it lives</th>
+        <th>How long</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Local accounts, transactions, and settings</td>
+        <td>Your device only</td>
+        <td>Until you delete the App, use the sign-out "Delete Data" option, or reset the device</td>
+        </tr>
+        <tr>
+        <td>Sign-in identity (name, email, photo, Firebase UID)</td>
+        <td>Firebase Authentication</td>
+        <td>Until you delete your account (contact us, or we can add an in-app option) or it's inactive long enough to be removed under our standard housekeeping</td>
+        </tr>
+        <tr>
+        <td>Subscription/entitlement records</td>
+        <td>RevenueCat, per its own retention practice</td>
+        <td>For as long as needed to manage your subscription and for statutory tax/accounting purposes, typically several years after expiry</td>
+        </tr>
+        <tr>
+        <td>Encrypted cloud sync backup</td>
+        <td>Firestore, under your Firebase UID</td>
+        <td>Until you delete it (Section 8.3) or your account</td>
+        </tr>
+        <tr>
+        <td>Advertising interaction data</td>
+        <td>Google, per AdMob's own retention practice</td>
+        <td>Not controlled by us — see Google's privacy policy</td>
+        </tr>
+        <tr>
+        <td>Support correspondence</td>
+        <td>Our email account</td>
+        <td>Normally 24 months from the last message, longer where a claim or statutory obligation requires it</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+
+        <hr>
+
+        <h2>16. Security</h2>
+        <p>We take appropriate technical and organisational measures required by Article 32 GDPR and comparable laws:</p>
+        <ul>
+        <li>Local data sits in the App's private, sandboxed storage, protected by the OS and by device-level file encryption when your device is locked with a passcode.</li>
+        <li>The optional cloud sync feature (Section 8) is designed so that plaintext financial data never reaches our servers or Google's — only ciphertext, non-secret key-derivation metadata, and last-modified timestamps do. Your locally cached sync key is stored using the OS's secure credential store (iOS Keychain / Android Keystore via <code>flutter_secure_storage</code>), not in plain app storage.</li>
+        <li>Payment processing is handled entirely by Apple; we hold no payment data. RevenueCat handles entitlement data under its own security programme.</li>
+        <li>Access to our email account is protected by a strong, unique password and multi-factor authentication. The web pages hosting this policy are served over HTTPS.</li>
+        </ul>
+        <p>No method of transmission or storage is completely secure, and we cannot guarantee absolute security. We encourage you to protect your device with a passcode or biometric lock, keep your OS up to date, and choose a strong, memorable encryption password if you enable cloud sync — see the irreversibility warning in Section 8.1.</p>
+        <p><strong>Breach notification.</strong> In the unlikely event of a personal data breach likely to result in a risk to your rights and freedoms, we will notify the competent supervisory authority within <strong>72 hours</strong> of becoming aware of it (Article 33 GDPR) and affected individuals without undue delay where required.</p>
+
+        <hr>
+
+        <h2>17. Changes to this policy</h2>
+        <p>We may update this policy to reflect changes to the App, our practices, or the law — in particular before adding Android advertising/purchases, a formal EEA/UK/Switzerland ad-consent tool, or any new third-party SDK.</p>
+        <p>When we do, we revise the <strong>"Last updated"</strong> date and version above, publish the update at <a href="https://sheikhamais.github.io/moneymanager/privacy/">https://sheikhamais.github.io/moneymanager/privacy/</a>, and — for <strong>material</strong> changes (expanding data categories collected, a new incompatible purpose, a new recipient category, or a change to your rights) — give <strong>prominent advance notice</strong>, which may include an in-app notice, and obtain your consent first where the law requires it. Continuing to use the App after a change takes effect indicates acceptance, except where consent is separately required.</p>
+
+        <hr>
+
+        <h2>18. App Store and Google Play privacy details</h2>
+        <p>Because the App now includes Firebase Authentication, Cloud Firestore, RevenueCat, and (iOS) Google Mobile Ads, our declarations on the <strong>App Privacy</strong> section of the App Store and the <strong>Data safety</strong> section of Google Play reflect real data collection — <strong>not</strong> "Data Not Collected." In summary, data linked to your identity may include: contact info (email, name), identifiers (Firebase UID, and an advertising identifier on iOS if you grant App Tracking Transparency permission), and purchase history; financial information you enter is stored locally and, if you enable cloud sync, only ever leaves your device as end-to-end encrypted ciphertext we cannot read. We keep these store declarations in step with this policy and update both together whenever either changes.</p>
+
+        <hr>
+
+        <h2>19. Contact</h2>
+        <blockquote>
+        <p><strong>Email: sheikhamais@gmail.com</strong><br />
+        <strong>Amais Sheikh, Pakistan</strong></p>
+        </blockquote>
+        <p>We aim to acknowledge every message within <strong>5 business days</strong> and resolve it within the statutory period in Section 14.5. If you are in the EEA, the UK, or Switzerland and unsatisfied with our response, you may complain to your supervisory authority (Section 14.2). If you are in the United States, you may contact your state Attorney General. Nothing here limits your right to do so.</p>
+
+        <hr>
+
+        <p><strong>Related document:</strong> <a href="https://sheikhamais.github.io/moneymanager/terms/">Terms and Conditions</a></p>
+
+        <footer>
+            Amais: Money Manager is not affiliated with, endorsed by, or sponsored by Apple Inc. or Google LLC. Apple, App Store, and iOS are trademarks of Apple Inc. Google Play, Firebase, and AdMob are trademarks of Google LLC.
+        </footer>
+    </div>
+</body>
+
+</html>
